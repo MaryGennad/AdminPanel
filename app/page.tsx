@@ -44,7 +44,6 @@ export default function Home() {
       setEditingId(null);
     });
   };
-
   return (
     <div style={{ padding: '40px', fontFamily: 'sans-serif', background: '#111', color: '#eee' }}>
       <h1>Мой магазин</h1>
