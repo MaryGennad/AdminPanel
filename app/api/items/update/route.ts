@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       { $set: { text } }
     );
     return NextResponse.json({ success: true });
-  } catch (e) {
+  } catch (_) {
     return NextResponse.json({ error: 'Update failed' }, { status: 500 });
   }
 }
