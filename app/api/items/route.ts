@@ -29,7 +29,7 @@ export async function GET() {
         text: item.text,
       }))
     );
-  } catch (e) {
+  } catch {
     console.error('DB Error:', e);
     // ❗ Возвращаем пустой массив вместо объекта с ошибкой
     return NextResponse.json([]);
